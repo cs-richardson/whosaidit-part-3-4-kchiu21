@@ -51,8 +51,6 @@ def predict(text, shakespeardict, austendict):
             austen_score = (get_score(next_key, austendict))
     if shakespeare_score > austen_score:
         print ("I think that was written by Skakespeare.")
-    elif shakespeare_score == austen_score:
-        print ("not work")
     else:
         print ("I think that was written by Jane Austen.")
         
